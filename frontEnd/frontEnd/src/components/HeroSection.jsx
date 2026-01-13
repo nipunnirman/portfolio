@@ -1,4 +1,7 @@
-const HeroSection = () => (
+import React from 'react';
+import { Github, Linkedin, Mail, Phone, MapPin, Download, Sparkles } from 'lucide-react';
+
+export const HeroSection = () => (
   <section className="min-h-screen flex items-center justify-center px-6 pt-20">
     <div className="max-w-4xl text-center">
       {/* Profile Photo */}
@@ -6,7 +9,7 @@ const HeroSection = () => (
         <div className="glow-box w-48 h-48 rounded-full">
           <div className="glow-box-content w-full h-full rounded-full overflow-hidden flex items-center justify-center">
             <img 
-              src="https://via.placeholder.com/300x300/0a0a0a/34c3eb?text=Your+Photo" 
+              src="/your-photo.jpg"
               alt="Nipun Nirman Rathnayaka"
               className="w-full h-full object-cover"
             />
@@ -24,10 +27,14 @@ const HeroSection = () => (
       
       {/* Action Buttons */}
       <div className="flex justify-center gap-4 mb-8 flex-wrap">
-        <button className="px-6 py-3 bg-[#34c3eb]/10 border border-[#34c3eb] rounded-lg hover:bg-[#34c3eb]/20 transition-all flex items-center gap-2">
+        <a 
+          href="/Nipun_Nirman_CV.pdf" 
+          download
+          className="px-6 py-3 bg-[#34c3eb]/10 border border-[#34c3eb] rounded-lg hover:bg-[#34c3eb]/20 transition-all flex items-center gap-2"
+        >
           <Download size={20} />
           Download CV
-        </button>
+        </a>
         <button className="px-6 py-3 bg-[#34c3eb]/10 border border-[#34c3eb] rounded-lg hover:bg-[#34c3eb]/20 transition-all flex items-center gap-2">
           <Sparkles size={20} />
           Current Projects
