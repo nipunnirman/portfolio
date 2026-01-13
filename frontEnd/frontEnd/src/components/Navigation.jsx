@@ -1,4 +1,6 @@
-const Navigation = ({ activeSection, setActiveSection }) => (
+import React from 'react';
+
+export const Navigation = ({ activeSection, setActiveSection }) => (
   <nav className="fixed top-0 w-full bg-black/90 backdrop-blur-sm z-50 border-b border-gray-900">
     <div className="max-w-7xl mx-auto px-6 py-4">
       <div className="flex justify-between items-center">
