@@ -1,4 +1,7 @@
-const AboutSection = () => (
+import React from 'react';
+import { Brain, Code, Cloud } from 'lucide-react';
+
+export const AboutSection = () => (
   <section className="py-20 px-6">
     <div className="max-w-6xl mx-auto">
       <h2 className="text-4xl font-bold mb-12 text-center cyber-text">About Me</h2>
