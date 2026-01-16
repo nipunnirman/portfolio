@@ -1,4 +1,7 @@
-const CertificationsSection = ({ certifications }) => (
+import React from 'react';
+import { ExternalLink } from 'lucide-react';
+
+export const CertificationsSection = ({ certifications }) => (
   <section className="py-20 px-6 bg-black">
     <div className="max-w-6xl mx-auto">
       <h2 className="text-4xl font-bold mb-12 text-center cyber-text">Certifications</h2>
